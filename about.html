@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: 999;
+        }
+        nav h1 {
+            color: white;
+        }
+
+        table {
+            margin-top: 200px;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            border: solid;
+            margin: 20px 0;
+            background-color: red;
+            /* line-height: 200px; */
+            text-align: center;
+            position: relative;
+        }
+
+        .kotak1 span {
+            background-color: aqua;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            line-height: 100px;
+            top: -30px;
+            right: -30px;
+            box-shadow: 20px 20px 30px black;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: right;
+        }
+
+        nav li {
+            display: inline-block;
+            padding: 10px;
+            margin: 10px 5px;
+            background-color: black;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            
+        }
+
+        nav ul li a:hover{
+            color: red;
+            font-style: italic;
+            transition: 0.5s;
+            
+        }
+
+        .kotak2 span {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            background-color: yellow;
+            opacity: 70%;
+            left: 0;
+            top: 0;
+        }
+
+        h3, h4, h5, h6{
+            color: brown;
+        }
+
+        input{
+            width: 100px;
+            border: 5px solid black;
+        }
+
+        input:focus{
+            background-color: black;
+            color: wheat;
+            width: 200px;
+            transition: 1s;
+            border: 5px solid white;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav style="background-color: rebeccapurple;">
+        <h1>Ini Halaman About</h1>
+
+        <ul>
+            <li> <a href="">Home</a> </li>
+            <li> <a href="">About</a></li>
+            <li> <a href="">Service</a></li>
+        </ul>
+    </nav>
+    
+
+    <table border="1px" >
+        <tr>
+            <th>Nama</th>
+            <th>Kelas</th>
+            <th>Gender</th>
+            <th>Alamat</th>
+        </tr>
+        <tr>
+            <td>Bachtiar Dwi Julianto</td>
+            <td>12</td>
+            <td>Laki-Laki</td>
+        </tr>
+    </table>
+
+    <div class="kotak1"><span>Flash Sale</span></div>
+    <div class="kotak2"><span>Buy 2 Get 1</span></div>
+    
+    <div class="kotak3">Kotak 1</div>
+    <div class="kotak4">Kotak 2</div>
+    <div class="kotak3">Kotak 1</div>
+    <div class="kotak4">Kotak 2</div>
+    <div class="kotak3">Kotak 1</div>
+    <div class="kotak4">Kotak 2</div>
+
+    <h3>Hello World</h3>
+    <h4>Hello World</h4>
+    <h5>Hello World</h5>
+    <h6>Hello World</h6>
+
+    <input type="text" placeholder="Masukan Nama">
+    
+</body>
+</html>

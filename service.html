@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes bergerak {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+
+        }
+
+        .gojo {
+            width: 400px;
+            height: 450px;
+            animation: bergerak 3s infinite;
+            display: inline;
+            vertical-align: middle;
+        }
+        p {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ini Halaman Service</h1>
+
+    <h1>Registrasi</h1>
+    <form action="" method="post">
+        <label for="name">Nama</label>
+        <input type="text" name="name" id="name"> <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"><br>
+        <label for="gender">Gender: </label> <br>
+        <input type="radio" name="gender" id="gender" value="Laki-Laki"> Laki-Laki
+        <input type="radio" name="gender" id="gender" value="Perempuan"> Perempuan <br>
+        <label for="birthday">Birthday</label>
+        <input type="date" name="birthday" id="birthday"><br>
+        <label for="status">Status: </label><br>
+        <select name="status" id="status">
+            <option value="Sudah Menikah">Sudah Menikah</option>
+            <option value="Belum Menikah">Belum Menikah</option>
+        </select> <br>
+        <label for="masukan">Masukan</label><br>
+        <textarea name="masukan" id="masukan" cols="30" rows="10"></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <img class="gojo" src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/e/ef/Satoru_Gojo_%28Anime_2%29.png/revision/latest?cb=20201025013634" alt="Gojo Sotaro"> 
+   <p>Meeong</p>
+    
+</body>
+</html>
